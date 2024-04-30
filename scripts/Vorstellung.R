@@ -1,6 +1,6 @@
 #a)
-Air_Transport_Data <- read.csv("Air transport of passengers by country (yearly data).csv", header = TRUE, sep = ";", dec = ",", stringsAsFactors = FALSE)
-Immigration_Data <- read.csv("Immigration.csv", header = TRUE, sep = ";", dec = ",", stringsAsFactors = FALSE)
+Air_Transport_Data <- read.csv("../Docs/Air transport of passengers by country (yearly data).csv", header = TRUE, sep = ";", dec = ",", stringsAsFactors = FALSE)
+Immigration_Data <- read.csv("../Docs/Immigration.csv", header = TRUE, sep = ";", dec = ",", stringsAsFactors = FALSE)
 # Cleaning data
 names(Air_Transport_Data)[1] <- "Countries"
 names(Immigration_Data)[1] <- "Countries"

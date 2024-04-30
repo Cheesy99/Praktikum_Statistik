@@ -2,7 +2,7 @@ library(caret)
 library(pROC)
 library(ROCR)
 #b)
-load("Data/SPECTF.RData")
+load("../Data/SPECTF.RData")
 folds <- createFolds(SPECTF$X0, k = 10, list = TRUE)
 
 predictions <- actuals <- numeric(nrow(SPECTF))
@@ -39,7 +39,7 @@ plot(perf_obj, colorize=TRUE, print.cutoffs.at=seq(0,1,by=0.1), text.adj=c(-0.2,
 
 
 #d)
-pdf("ROC SPECTF.pdf")
+pdf("../Docs/ROC SPECTF.pdf")
 plot(roc_obj, main="ROC Curve")
 text(0.8, 0.2, paste("AUC: ", round(auc(roc_obj), 2), "\n95% CI: ", round(ci.auc(roc_obj)[1], 2), "-", round(ci.auc(roc_obj)[3], 2)), adj = c(0, 0))
 dev.off()

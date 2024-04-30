@@ -1,5 +1,5 @@
 # a)
-OECD_Data <- read.csv("Data/oecdM.csv", header = TRUE, sep= ",", dec= ".", stringsAsFactors =  FALSE)
+OECD_Data <- read.csv("../Data/oecdM.csv", header = TRUE, sep= ",", dec= ".", stringsAsFactors =  FALSE)
 # b)
 numeric_cols <- sapply(OECD_Data, is.numeric)
 OECD_Data_Numeric <- OECD_Data[, numeric_cols]

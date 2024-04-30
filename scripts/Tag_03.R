@@ -1,6 +1,6 @@
 #Aufgabe 09
 # a)
-load("Data/SPECTF.RData")
+load("../Data/SPECTF.RData")
 # Überprüfen Sie, welche Objekte geladen wurden
 objects <- ls()
 #print(objects)

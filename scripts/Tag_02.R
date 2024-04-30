@@ -15,7 +15,7 @@ print(wilcox_test_result)
 
 # Aufgabe 5
 # a)
-PISA_Data <- read.csv("Data/PISA.csv", header = TRUE, sep= ",", dec= ".", stringsAsFactors =  FALSE)
+PISA_Data <- read.csv("../Data/PISA.csv", header = TRUE, sep= ",", dec= ".", stringsAsFactors =  FALSE)
 
 # b)
 boxplot(PISA_Data[,c("R00", "R06", "M00", "M06", "S00", "S06")], main = "Boxplot of PISA Scores", ylab = "Score", xlab = "Year and Subject" )
@@ -34,7 +34,7 @@ print(t_test_result_S)
 # haben.
 
 # Aufgabe 06
-Hustensaft_Data <- read.csv("Data/Hustensaft.csv", header = TRUE, sep= ",", dec= ".", stringsAsFactors =  FALSE)
+Hustensaft_Data <- read.csv("../Data/Hustensaft.csv", header = TRUE, sep= ",", dec= ".", stringsAsFactors =  FALSE)
 t_test_result <- t.test(Hustensaft_Data$Kon, mu = 40)
 
 print(t_test_result)
@@ -50,7 +50,7 @@ print(t_test_result)
 
 # Aufgabe 07
 # a)
-sues <- read.csv("Data/Suess.csv", header = TRUE, sep = ";", dec = ".", stringsAsFactors = FALSE)
+sues <- read.csv("../Data/Suess.csv", header = TRUE, sep = ";", dec = ".", stringsAsFactors = FALSE)
 # b)
 coplot(Geschmack ~ Feuchtigkeit | Suesse, data = sues, pch = c(5,18), rows = 1, columns = 3)
 
@@ -78,8 +78,8 @@ plot(interaction_term, model_interaction$residuals, main = "Residuals vs Feuchti
 #detach(sues)
 # Aufgabe 08
 # a)
-Air_Transport_Data <- read.csv("Air transport of passengers by country (yearly data).csv", header = TRUE, sep = ";", dec = ",", stringsAsFactors = FALSE)
-Immigration_Data <- read.csv("Immigration.csv", header = TRUE, sep = ";", dec = ",", stringsAsFactors = FALSE)
+Air_Transport_Data <- read.csv("../Docs/Air transport of passengers by country (yearly data).csv", header = TRUE, sep = ";", dec = ",", stringsAsFactors = FALSE)
+Immigration_Data <- read.csv("../Docs/Immigration.csv", header = TRUE, sep = ";", dec = ",", stringsAsFactors = FALSE)
 # Cleaning data
 names(Air_Transport_Data)[1] <- "Countries"
 names(Immigration_Data)[1] <- "Countries"

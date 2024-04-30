@@ -4,5 +4,5 @@ This project was conducted as part of my practical work in statistics. It took p
 <br>
 <br>
 <img src="result_graphs/Aufgabe_08_a_1.png" alt="grafik" width="300">
-<img src="result_graphs/Aufgabe_08_a_1.png" alt="grafik" width="300">
-<img src="result_graphs/Aufgabe_08_a_1.png" alt="grafik" width="300">
+<img src="result_graphs/Aufgabe_08_a_2.png" alt="grafik" width="300">
+<img src="result_graphs/Aufgabe_08_b.png" alt="grafik" width="300">
